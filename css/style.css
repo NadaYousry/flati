@@ -1,0 +1,474 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*
+    pri-color:#0C82B0;
+    sec-color:#1F3242;
+    third-color:#E9E6E1;
+    
+    */
+}
+
+
+.container{
+    overflow: hidden;
+}
+
+/***********************start preloader**************************/
+.preloaderParent{
+    background-color: #0C82B0;
+    color: white;
+    height: 100vh;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+.ball{
+    background-color: white;
+    border: 2px solid #0C82B0;
+    position: absolute;
+    left: 50%;
+    border-radius: 50%;
+    transform: translate(-50%);
+    animation: ballAnimation 1s 4 ease-in-out,balltop 1s 4s 1 ease-in-out,ballwide 1s 5s 1 ease-in-out;
+    animation-fill-mode: forwards;
+    z-index: 200;
+}
+.ballSahadow{
+    position: absolute;
+    border-radius: 50%;
+    transform: translate(-50%);
+    left: 50%;
+    top: 60%;
+    height: 20px;
+    background-color: rgba(0,0,0,0.5);
+    animation: ballShadow 1s 4 ease-in-out;
+    z-index: 100;
+    
+}
+@keyframes balltop{
+    0%{
+        width: 55px;
+        height: 20px;
+        top: 60%;
+    }
+    50%{
+        width: 55px;
+        height: 55px;
+    }
+    100%{
+        top: -20%;
+    }
+}
+
+@keyframes ballwide{
+    0%{
+        width: 55px;
+        height: 55px;
+        top: -20%;
+    }
+    100%{
+        top: -50%;
+        width: 150%;
+        height: 300vh;
+    }
+}
+@keyframes ballAnimation{
+    0%,100%{
+        top: 60%;
+        height: 20px;
+        width: 55px;
+    }
+    50%{
+        top: 30%;
+        height: 55px;
+        width: 50px;
+    }
+}
+@keyframes ballShadow{
+    0%,100%{
+        opacity: 0.3;
+        width: 55px;
+    }
+    50%{
+        opacity: 0;
+        width: 20px;
+    }
+}
+/***********************end preloader**************************/
+
+
+
+
+
+
+
+
+nav.navbar{
+
+    background-color: #1F3242;
+    padding-bottom: 0;
+        
+}
+nav.navbar-light{
+    background-color: #1F3242;
+}
+.navbar-light .navbar-brand {
+    color: #fff;
+    font-size: 40px;
+    padding: 0;
+}
+.navbar-light .navbar-brand:hover {
+    color: #fff;
+
+}
+.navbar-light .navbar-nav .active>.nav-link , .navbar-light .navbar-nav .nav-link {
+    color: #fff;
+}
+/*
+.nav-link{
+    margin-right: 35px;
+}
+*/
+.nav-item {
+    text-align: center;
+    padding: 10px;
+    transition: all 0.2s ;
+    cursor: pointer;
+}
+
+
+.nav-item:hover{
+    color: #fff;
+}
+.navbar-light .navbar-nav .active>.nav-link:hover, .navbar-light .navbar-nav .nav-link:hover {
+    color: #fff;
+}
+/*collapse*/
+.navbar-light .navbar-toggler {
+    color: rgba(255,255,255,1);
+    border-color: rgba(255,255,255,0.5);
+}
+.navbar-light .navbar-toggler-icon {
+    color: #fff;
+    background-image: url('../img/collapse.png');
+}
+
+.second{
+    padding-top: 90px;
+    background-color: #0C82B0;
+    color: #fff;
+    text-align: center;
+    height: 500px;
+    overflow: hidden;
+}
+.second h1{
+    letter-spacing: 3px; 
+    font-size: 60px;
+}
+.second p{
+    letter-spacing: 3px;
+    font-size: 25px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.second span{
+    padding: 7px;
+    border: 1px solid #fff;
+    cursor: pointer;
+    width: 20%;
+    position: relative;
+    z-index: 1;
+    
+}
+.bot{
+    width: 50%;
+    position: relative;
+    bottom: 100px;
+    right: -50px;
+}
+.second .robot{
+    display: block;
+    width: 80%;
+}
+.second .rocket{
+    position: relative;
+    top: -750px;
+    left: 340px;  
+}
+.second .rocket img {
+    width: 17%;
+}
+
+main .par{
+    background-color: #eeeeee;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+    font-size: 25px;
+/*    color: #7d7d7d;*/
+    font-weight: 100;
+    
+}
+.par .prog{
+    color: #fff;
+    background-color: #00a6c6;
+    padding-left: 3px;
+    padding-right: 3px;
+    font-weight: 400;
+}
+.par .comp{
+    color: #00a6c6;
+    font-weight: 400;
+}
+
+.par .simp{
+    font-weight: 400;
+}
+
+
+main .sec2{
+    text-align: center;
+    padding-top: 50px;
+    background-color: white;
+    padding-bottom: 70px;
+}
+.sec2 .content{
+    background-color: #eeeeee;
+    border-radius: 2%;
+    padding: 10px;
+    
+
+}
+.sec2 .icon{
+    display: inline-block;     
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    background-color: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 10px;
+}
+.sec2 .icon i{
+    color: #0C82B0;
+    font-size: 25px;
+}
+.sec2 h2{
+    font-size: 20px;
+}
+.sec2 h3{
+    font-size: 15px;
+    color: #00a6c6;
+}
+.sec2 p{
+    font-size: 12px;
+}
+
+.label{
+    position: absolute;
+    top: -5px;
+    width: 108px;    
+}
+
+.getInTouch{
+    background-color: #0C82B0;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    color: #fff;
+    text-align: center;
+    
+}
+.getInTouch h1{
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 5px;
+    padding-bottom: 10px;
+    
+}
+.getInTouch p{
+    font-weight: 100;   
+}
+.copyRight{
+    background-color: #1F3242;
+    color: #fff;
+    text-align: center;
+    font-weight: 100;
+    padding-bottom: 15px;
+    padding-top: 20px;
+    margin-bottom: 0;
+}
+
+
+/*color selection*/
+
+
+.selectColor{
+    position: absolute;
+    top: 200px;
+
+    
+}
+.Colors{
+    background-color: #eee;
+    padding: 7px;
+    padding-top: 10p;
+    display: none;
+}
+.Colors > div{
+    margin: 2px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: all 0.2s;
+    
+}
+.Colors > div:hover{
+    opacity: 1;
+    box-shadow: 0 0 5px #000;
+}
+.red{
+    width: 40px;
+    height: 40px;
+    border-radius: 2px;
+    background-color: #ba1e1e;
+}
+.green{
+    width: 40px;
+    height: 40px;
+    border-radius: 2px;
+    background-color: green;
+}
+.orange{
+    width: 40px;
+    height: 40px;
+    border-radius: 2px;
+    background-color: orange;
+}
+
+.purple{
+    width: 40px;
+    height: 40px;
+    border-radius: 2px;
+    background-color: purple;
+}
+.SettingIcon{
+    background-color: #eee;
+    width: 35px;
+    height: 35px;
+
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.SettingIcon .gear{
+    color: #1F3242;
+    font-size: 20px;
+    padding: 5px;
+    transition: all 0.2s;
+    
+}
+.SettingIcon .gear:hover{
+    transform: rotate(180deg);
+    
+}
+
+
+
+
+@media only screen and (max-width:1024px){
+    .second .rocket{
+    position: relative;
+    top: -636px;
+    left: 300px;  
+    }
+    .second .robot {
+        display: block;
+        width: 80%;
+    }
+    .label{
+    position: absolute;
+    top: -3px;
+    width: 83px;   
+    }
+}
+
+@media only screen and (max-width:768px){
+    .second .rocket{
+    position: relative;
+    top: -528px;
+    left: 201px;
+     }
+    .second .rocket img {
+    width: 24%;
+    }
+    .bot {
+        width: 50%;
+    position: relative;
+    bottom: 45px;
+    right: -34px;
+    }
+   .second .robot{
+    width: 99%;
+
+    }
+    
+    .sec2 .icon {
+    padding: 12px;
+    }
+    .sec2 .content {
+    padding: 35px;
+    margin-bottom: 32px;
+    }
+    .label {
+    top: -7px;
+    width: 145px;
+    }
+
+
+}
+
+@media only screen and (max-width:428px){
+    .second h1 {
+        font-size: 35px;
+    }
+    .second p {
+        font-size: 18px;
+    }
+    .second {
+
+        height: 399px;
+    }
+
+    .bot {
+         width: 61%;
+         bottom: 50px;
+         right: 50px;
+    }
+    .second .rocket {
+        position: relative;
+        top: -266px;
+        left: 114px;
+    }
+    .second .rocket img {
+        width: 27%;
+    }
+    p {
+        font-size: 18px;
+
+    }
+    .sec2 .icon {
+        height: 80px;
+        width: 80px;
+        padding: 20px;
+    }
+    .sec2 .icon i {
+        font-size: 37px;
+    }
+    .label {
+        width: 105px;
+    }
+}
+
